@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initialscale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+<div align="center" id='TheArray'></div>
+<button id="reverse" onclick="calc()">Click The Button To get
+the Reverse Value</button>
+<script>
+   var listOfNames = [
+      'John',
+      'David',
+      'Bob'
+   ];
+   function calc()
+   {
+    for(let char of listOfNames)
+    {
+        document.getElementById('TheArray').innerHTML=char;
+        char++;
+    }
+   }
+</script>
+</body>
+</html>
